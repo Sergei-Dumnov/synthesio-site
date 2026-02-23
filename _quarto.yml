@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "SYNTHESIO"
+  title: " "
   favicon: favicon.ico
   navbar:
     background: "#1a1f2e"
