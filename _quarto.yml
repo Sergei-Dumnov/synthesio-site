@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "SYNTHESIO"
+  favicon: favicon.ico
+  navbar:
+    background: "#1a1f2e"
+    foreground: "#dee2e6"
+    logo-alt: "Synthesio"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: about/index.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/Sergei-Dumnov
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/dumnov
+        aria-label: LinkedIn
+
+  page-footer:
+    background: "#1a1f2e"
+    left: "© 2026 Synthesio · Built with [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/Sergei-Dumnov
+
+format:
+  html:
+    theme:
+      dark: [darkly, custom.scss]
+    highlight-style: monokai
+    code-copy: true
+    code-overflow: wrap
+    toc: false

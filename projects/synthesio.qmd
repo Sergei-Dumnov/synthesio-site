@@ -1,0 +1,86 @@
+---
+title: "Synthesio AI Analytics Dashboard"
+description: "Natural language to SQL analytics powered by R, DuckDB, and Claude AI"
+date: "2026-02"
+categories: [AI, R Shiny, Analytics]
+---
+
+```{=html}
+<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
+  <span class="card-tag">R Shiny</span>
+  <span class="card-tag">Claude AI</span>
+  <span class="card-tag">DuckDB</span>
+  <span class="card-tag">ellmer</span>
+</div>
+```
+
+## The Problem
+
+Business intelligence tools typically require either expensive licences, specialist SQL knowledge,
+or slow report-request cycles. The question: *what if anyone could ask a plain English question
+and get an instant, visualised, AI-narrated answer?*
+
+## The Solution
+
+Synthesio is a proof-of-concept AI analytics dashboard built entirely in R. It combines:
+
+- **ellmer** — to interface with Claude's API for both SQL generation and insight narration
+- **DuckDB** — as a fast, embedded analytical database (no server required)
+- **R Shiny + shinychat** — for the interactive dashboard and conversational UI
+- **Plotly + reactable** — for rich visualisations and searchable data tables
+
+## Demo
+
+```{=html}
+<div class="video-wrapper" style="margin: 2rem 0;">
+  <video controls>
+    <source src="../assets/demo.mp4" type="video/mp4">
+  </video>
+</div>
+```
+
+## Architecture
+
+The core pipeline follows three steps:
+
+1. **NL → SQL** — The user's question is sent to Claude along with a database schema description.
+   Claude returns a valid DuckDB SQL query.
+2. **SQL → Results** — The query executes against the Northwind database in DuckDB,
+   returning a dataframe.
+3. **Results → Insight** — The dataframe is summarised and sent back to Claude,
+   which returns a business narrative in markdown.
+
+```{=html}
+<div style="background: #1e2433; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: #8892a4;">
+  User question<br>
+  &nbsp;&nbsp;&nbsp;↓ <span style="color:#4a90d9;">generate_sql()</span> via ellmer + Claude<br>
+  SQL query<br>
+  &nbsp;&nbsp;&nbsp;↓ <span style="color:#4a90d9;">dbGetQuery()</span> via DuckDB<br>
+  Dataframe<br>
+  &nbsp;&nbsp;&nbsp;↓ <span style="color:#4a90d9;">generate_insight()</span> via ellmer + Claude<br>
+  Markdown narrative + Plotly chart + reactable table
+</div>
+```
+
+## Key Technical Decisions
+
+**Why DuckDB?** Fast columnar analytics without any server setup. Works perfectly with R
+via the DBI interface, and handles CSV imports gracefully with `readr::read_csv`.
+
+**Why ellmer?** The cleanest R-native interface to Claude's API. Supports streaming,
+tool use, and multi-turn conversations — important for future iterations.
+
+**Why shinychat?** Provides a ready-made chat UI component that integrates seamlessly
+with Shiny's reactive model, allowing the AI conversation to drive dashboard state.
+
+## What's Next
+
+- Connecting to live databases (PostgreSQL, Snowflake)
+- Multi-turn conversational memory for follow-up questions
+- User authentication and saved query history
+- Deployment to a cloud environment with secure API key management
+
+## Source Code
+
+The full source code is available on GitHub:
+[github.com/YOUR_USERNAME/synthesio](https://github.com/YOUR_USERNAME/synthesio)

@@ -1,0 +1,84 @@
+---
+title: "About"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div style="padding: 5rem 0 2rem;">
+  <div class="container" style="max-width: 900px;">
+    <p class="section-heading">Background</p>
+    <h1 class="section-title">About Me</h1>
+  </div>
+</div>
+
+<div style="padding: 0 0 5rem;">
+  <div class="container" style="max-width: 900px;">
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
+
+      <div>
+        <div style="width: 100%; aspect-ratio: 1; background: #1e2433; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #8892a4; font-size: 0.85rem; margin-bottom: 1.5rem;">
+          Your Photo
+        </div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem;">Sergei Dumnov</h3>
+        <p style="color: #8892a4; font-size: 0.85rem; margin-bottom: 1.5rem;">Data Scientist · AI Developer</p>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <a href="https://github.com/Sergei-Dumnov" style="color: #4a90d9; font-size: 0.85rem; text-decoration: none;">⟶ GitHub</a>
+          <a href="https://www.linkedin.com/in/dumnov/" style="color: #4a90d9; font-size: 0.85rem; text-decoration: none;">⟶ LinkedIn</a>
+        </div>
+      </div>
+
+      <div>
+        <p style="font-size: 1.05rem; line-height: 1.9; color: #b0bec5; margin-bottom: 2rem;">
+          I'm a data scientist and analytics developer with a passion for making data
+          accessible and actionable. My current focus is on integrating AI capabilities
+          into traditional analytics workflows — bridging the gap between business questions
+          and data-driven answers.
+        </p>
+        <p style="line-height: 1.9; color: #8892a4; margin-bottom: 3rem;">
+          The Synthesio project grew out of a simple question: <em>what would analytics
+          look like if anyone could talk to their data?</em> I'm exploring that idea using
+          R, Shiny, DuckDB, and Claude — building tools that are both technically rigorous
+          and genuinely usable by non-technical stakeholders.
+        </p>
+
+        <p class="section-heading">Core Skills</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.6rem; margin: 1rem 0 3rem;">
+          <div class="skill-badge">R</div>
+          <div class="skill-badge">R Shiny</div>
+          <div class="skill-badge">SQL</div>
+          <div class="skill-badge">DuckDB</div>
+          <div class="skill-badge">LLM APIs</div>
+          <div class="skill-badge">ellmer</div>
+          <div class="skill-badge">tidyverse</div>
+          <div class="skill-badge">Plotly</div>
+          <div class="skill-badge">Quarto</div>
+          <div class="skill-badge">Git</div>
+          <div class="skill-badge">Python</div>
+          <div class="skill-badge">reticulate</div>
+        </div>
+
+        <p class="section-heading">Journey</p>
+        <div class="timeline" style="margin-top: 1rem;">
+          <div class="timeline-item">
+            <div class="timeline-date">2026</div>
+            <h4>Synthesio AI Analytics</h4>
+            <p>Built an AI-powered Shiny dashboard integrating Claude AI for natural language querying and business insight generation over a DuckDB analytical database.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Update me</div>
+            <h4>Your Role / Project</h4>
+            <p>Add your professional background, key projects, or career milestones here.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Update me</div>
+            <h4>Your Role / Project</h4>
+            <p>Add your professional background, key projects, or career milestones here.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+```

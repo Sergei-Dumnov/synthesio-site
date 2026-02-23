@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "projects/synthesio.html",
+    "href": "projects/synthesio.html",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "",
+    "text": "R Shiny\n  Claude AI\n  DuckDB\n  ellmer"
+  },
+  {
+    "objectID": "projects/synthesio.html#the-problem",
+    "href": "projects/synthesio.html#the-problem",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "The Problem",
+    "text": "The Problem\nBusiness intelligence tools typically require either expensive licences, specialist SQL knowledge, or slow report-request cycles. The question: what if anyone could ask a plain English question and get an instant, visualised, AI-narrated answer?"
+  },
+  {
+    "objectID": "projects/synthesio.html#the-solution",
+    "href": "projects/synthesio.html#the-solution",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "The Solution",
+    "text": "The Solution\nSynthesio is a proof-of-concept AI analytics dashboard built entirely in R. It combines:\n\nellmer — to interface with Claude’s API for both SQL generation and insight narration\nDuckDB — as a fast, embedded analytical database (no server required)\nR Shiny + shinychat — for the interactive dashboard and conversational UI\nPlotly + reactable — for rich visualisations and searchable data tables"
+  },
+  {
+    "objectID": "projects/synthesio.html#demo",
+    "href": "projects/synthesio.html#demo",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "Demo",
+    "text": "Demo"
+  },
+  {
+    "objectID": "projects/synthesio.html#architecture",
+    "href": "projects/synthesio.html#architecture",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "Architecture",
+    "text": "Architecture\nThe core pipeline follows three steps:\n\nNL → SQL — The user’s question is sent to Claude along with a database schema description. Claude returns a valid DuckDB SQL query.\nSQL → Results — The query executes against the Northwind database in DuckDB, returning a dataframe.\nResults → Insight — The dataframe is summarised and sent back to Claude, which returns a business narrative in markdown.\n\n\n  User question\n     ↓ generate_sql() via ellmer + Claude\n  SQL query\n     ↓ dbGetQuery() via DuckDB\n  Dataframe\n     ↓ generate_insight() via ellmer + Claude\n  Markdown narrative + Plotly chart + reactable table"
+  },
+  {
+    "objectID": "projects/synthesio.html#key-technical-decisions",
+    "href": "projects/synthesio.html#key-technical-decisions",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "Key Technical Decisions",
+    "text": "Key Technical Decisions\nWhy DuckDB? Fast columnar analytics without any server setup. Works perfectly with R via the DBI interface, and handles CSV imports gracefully with readr::read_csv.\nWhy ellmer? The cleanest R-native interface to Claude’s API. Supports streaming, tool use, and multi-turn conversations — important for future iterations.\nWhy shinychat? Provides a ready-made chat UI component that integrates seamlessly with Shiny’s reactive model, allowing the AI conversation to drive dashboard state."
+  },
+  {
+    "objectID": "projects/synthesio.html#whats-next",
+    "href": "projects/synthesio.html#whats-next",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "What’s Next",
+    "text": "What’s Next\n\nConnecting to live databases (PostgreSQL, Snowflake)\nMulti-turn conversational memory for follow-up questions\nUser authentication and saved query history\nDeployment to a cloud environment with secure API key management"
+  },
+  {
+    "objectID": "projects/synthesio.html#source-code",
+    "href": "projects/synthesio.html#source-code",
+    "title": "Synthesio AI Analytics Dashboard",
+    "section": "Source Code",
+    "text": "Source Code\nThe full source code is available on GitHub: github.com/YOUR_USERNAME/synthesio"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "Background\n    About Me\n  \n\n\n\n  \n    \n\n      \n        \n          Your Photo\n        \n        Sergei Dumnov\n        Data Scientist · AI Developer\n        \n          ⟶ GitHub\n          ⟶ LinkedIn\n        \n      \n\n      \n        \n          I'm a data scientist and analytics developer with a passion for making data\n          accessible and actionable. My current focus is on integrating AI capabilities\n          into traditional analytics workflows — bridging the gap between business questions\n          and data-driven answers.\n        \n        \n          The Synthesio project grew out of a simple question: what would analytics\n          look like if anyone could talk to their data? I'm exploring that idea using\n          R, Shiny, DuckDB, and Claude — building tools that are both technically rigorous\n          and genuinely usable by non-technical stakeholders.\n        \n\n        Core Skills\n        \n          R\n          R Shiny\n          SQL\n          DuckDB\n          LLM APIs\n          ellmer\n          tidyverse\n          Plotly\n          Quarto\n          Git\n          Python\n          reticulate\n        \n\n        Journey\n        \n          \n            2026\n            Synthesio AI Analytics\n            Built an AI-powered Shiny dashboard integrating Claude AI for natural language querying and business insight generation over a DuckDB analytical database.\n          \n          \n            Update me\n            Your Role / Project\n            Add your professional background, key projects, or career milestones here.\n          \n          \n            Update me\n            Your Role / Project\n            Add your professional background, key projects, or career milestones here."
+  }
+]

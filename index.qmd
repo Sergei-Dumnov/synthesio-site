@@ -1,0 +1,101 @@
+---
+title: "SYNTHESIO AI ANALYTICS"
+subtitle: "Where business questions meet intelligent answers"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="hero">
+  <div class="container" style="max-width: 900px;">
+
+    <p class="section-heading">Data Science · AI · Analytics</p>
+
+    <div class="hero-title">
+      <span class="blue">SYNTHESIO</span><span class="orange"> AI </span><span class="blue">ANALYTICS</span>
+    </div>
+    <p class="hero-tagline">Where business questions meet intelligent answers</p>
+
+    <p class="hero-description">
+      An exploration in AI-augmented analytics — combining R, DuckDB, and Claude AI
+      to translate plain English business questions into SQL queries, visualisations,
+      and executive-level insights. Built to demonstrate what's possible when
+      traditional data science meets modern AI capabilities.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="projects/index.html" class="btn-primary-custom">View Projects</a>
+      <a href="about/index.html" class="btn-outline-custom">About Me</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-value">$1.27M</div>
+        <div class="stat-label">Revenue Analysed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">830</div>
+        <div class="stat-label">Orders Processed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">NL → SQL</div>
+        <div class="stat-label">Core Capability</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Open Source Stack</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="background: #0f1420; padding: 5rem 0;">
+  <div class="container" style="max-width: 900px;">
+
+    <p class="section-heading">Featured Project</p>
+    <h2 class="section-title">Synthesio AI Analytics Dashboard</h2>
+    <p style="color: #8892a4; max-width: 600px; line-height: 1.8; margin-bottom: 2.5rem;">
+      A fully functional AI-powered business analytics dashboard built in R Shiny.
+      Ask any business question in plain English and get SQL-generated results,
+      interactive charts, and AI-written narrative insights — instantly.
+    </p>
+
+    <div class="video-wrapper" style="max-width: 800px;">
+      <video controls>
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <a href="projects/synthesio.html" class="btn-primary-custom">Read the full write-up →</a>
+    </div>
+
+  </div>
+</div>
+
+<div style="padding: 5rem 0;">
+  <div class="container" style="max-width: 900px;">
+
+    <p class="section-heading">Technology Stack</p>
+    <h2 class="section-title">Built with</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 1.5rem;">
+      <div class="skill-badge">R / RStudio</div>
+      <div class="skill-badge">Shiny</div>
+      <div class="skill-badge">ellmer</div>
+      <div class="skill-badge">DuckDB</div>
+      <div class="skill-badge">Claude AI</div>
+      <div class="skill-badge">shinychat</div>
+      <div class="skill-badge">Plotly</div>
+      <div class="skill-badge">reactable</div>
+      <div class="skill-badge">bslib</div>
+      <div class="skill-badge">Quarto</div>
+      <div class="skill-badge">GitHub Pages</div>
+      <div class="skill-badge">YAML</div>
+    </div>
+
+  </div>
+</div>
+```
