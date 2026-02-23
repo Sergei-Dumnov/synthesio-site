@@ -4,7 +4,7 @@
     "href": "projects/synthesio.html",
     "title": "Synthesio AI Analytics Dashboard",
     "section": "",
-    "text": "R Shiny\n  Claude AI\n  DuckDB\n  ellmer"
+    "text": "2026-02-01"
   },
   {
     "objectID": "projects/synthesio.html#the-problem",
@@ -58,7 +58,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SYNTHESIO AI ANALYTICS",
+    "title": "SYNTHESIO",
     "section": "",
     "text": "Data Science · AI · Analytics\n\n    \n      SYNTHESIO AI ANALYTICS\n    \n    Where business questions meet intelligent answers\n\n    \n      An exploration in AI-augmented analytics — combining R, DuckDB, and Claude AI\n      to translate plain English business questions into SQL queries, visualisations,\n      and executive-level insights. Built to demonstrate what's possible when\n      traditional data science meets modern AI capabilities.\n    \n\n    \n      View Projects\n      About Me\n    \n\n    \n      \n        $1.27M\n        Revenue Analysed\n      \n      \n        830\n        Orders Processed\n      \n      \n        NL → SQL\n        Core Capability\n      \n      \n        100%\n        Open Source Stack\n      \n    \n\n  \n\n\n\n  \n\n    Featured Project\n    Synthesio AI Analytics Dashboard\n    \n      A fully functional AI-powered business analytics dashboard built in R Shiny.\n      Ask any business question in plain English and get SQL-generated results,\n      interactive charts, and AI-written narrative insights — instantly.\n    \n\n    \n      \n        \n        Your browser does not support the video tag.\n      \n    \n\n    \n      Read the full write-up →\n    \n\n  \n\n\n\n  \n\n    Technology Stack\n    Built with\n\n    \n      R / RStudio\n      Shiny\n      ellmer\n      DuckDB\n      Claude AI\n      shinychat\n      Plotly\n      reactable\n      bslib\n      Quarto\n      GitHub Pages\n      YAML"
   },

@@ -294,3 +294,8 @@ body {
 .text-orange { color: $brand-orange !important; }
 .text-muted-custom { color: $brand-muted !important; }
 section { padding: 5rem 0; }
+
+/*-- Hide auto-generated title block on home page --*/
+#title-block-header {
+  display: none !important;
+}
