@@ -1,11 +1,13 @@
 ---
-title: "SYNTHESIO"
 page-layout: full
 toc: false
 include-in-header:
   text: |
     <style>
-      h1.title, .quarto-title, .quarto-title-block, .subtitle { display: none !important; }
+      #title-block-header { display: none !important; }
+      .quarto-title-block { display: none !important; }
+      h1.title { display: none !important; }
+      .description { display: none !important; }
     </style>
 ---
 
