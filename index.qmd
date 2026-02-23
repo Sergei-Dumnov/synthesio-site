@@ -1,6 +1,4 @@
 ---
-title: "SYNTHESIO AI ANALYTICS"
-subtitle: "Where business questions meet intelligent answers"
 page-layout: full
 toc: false
 ---
@@ -75,7 +73,7 @@ toc: false
   </div>
 </div>
 
-<div style="padding: 5rem 0;">
+<div style="background: #1a1f2e; padding: 5rem 0;">
   <div class="container" style="max-width: 900px;">
 
     <p class="section-heading">Technology Stack</p>
