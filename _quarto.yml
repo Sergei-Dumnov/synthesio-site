@@ -3,11 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "SYNTHESIO"
+  title: " "
   favicon: favicon.ico
   navbar:
     background: "#1a1f2e"
     foreground: "#dee2e6"
+    title: false
     logo-alt: "Synthesio"
     left:
       - href: index.qmd
