@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
-  title: " "
+  title: "SYNTHESIO"
   favicon: favicon.ico
   navbar:
     background: "#1a1f2e"
@@ -21,7 +21,7 @@ website:
         href: https://github.com/Sergei-Dumnov
         aria-label: GitHub
       - icon: linkedin
-        href: https://www.linkedin.com/in/dumnov
+        href: https://www.linkedin.com/in/dumnov/
         aria-label: LinkedIn
 
   page-footer:
@@ -39,3 +39,4 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: false
+    title-block-style: none
