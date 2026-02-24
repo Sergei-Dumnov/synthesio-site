@@ -34,17 +34,17 @@ include-in-header:
       <a href="about/index.html" class="btn-outline-custom">About Me</a>
     </div>
 
-    <div class="stats-row">
+    <div class="stats-row" style="justify-content: space-between;">
+      <!-- <div class="stat"> -->
+      <!--   <div class="stat-value">$1.27M</div> -->
+      <!--   <div class="stat-label">Revenue Analysed</div> -->
+      <!-- </div> -->
+      <!-- <div class="stat"> -->
+      <!--   <div class="stat-value">830</div> -->
+      <!--   <div class="stat-label">Orders Processed</div> -->
+      <!-- </div> -->
       <div class="stat">
-        <div class="stat-value">$1.27M</div>
-        <div class="stat-label">Revenue Analysed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">830</div>
-        <div class="stat-label">Orders Processed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">NL → SQL</div>
+        <div class="stat-value">AI, NLP → SQL</div>
         <div class="stat-label">Core Capability</div>
       </div>
       <div class="stat">
